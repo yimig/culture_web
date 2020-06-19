@@ -1,0 +1,200 @@
+* {
+  font-family: "Segoe UI", "Microsoft YaHei UI", sans-serif;
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container {
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 100%;
+  width: 100%;
+}
+.container .colored {
+  color: #E1B011;
+}
+.container .row {
+  margin: 0;
+}
+.container .block-home {
+  margin: 0;
+  height: 980px;
+  width: 100%;
+  background-image: url("../img/header.png");
+}
+.container .block-home .main-title {
+  color: #707070;
+  margin-left: 170px;
+  margin-top: 185px;
+  font-size: 80px;
+  font-weight: lighter;
+}
+.container .block-home .sub-title {
+  color: #707070;
+  margin-left: 170px;
+  margin-top: 50px;
+  font-size: 20px;
+}
+.container .block-home .ctr-more {
+  margin-top: 148px;
+  margin-left: 207px;
+  font-size: 30px;
+  color: white;
+}
+.container .block-home .ctr-more:after {
+  content: "";
+  width: 209px;
+  height: 5px;
+  background-color: white;
+  position: relative;
+  left: -40px;
+}
+.container .block-nav {
+  background: white;
+  height: 100px;
+  color: #707070;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.container .block-nav .navi-bar .navi-item {
+  height: 100px;
+  margin: auto;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 25px;
+}
+.container .block-nav .navi-bar .navi-item:hover {
+  border-bottom: 5px solid #E1B011;
+}
+.container .block-nav .navi-bar .search-bar {
+  height: 45px;
+  border: 1px solid #707070;
+  border-radius: 45px;
+  margin-top: 25px;
+}
+.container .block-nav .navi-bar .search-bar .search-bar-item {
+  font-size: 20px;
+  border: none;
+  height: 43px;
+  border-radius: 25px;
+  width: 95%;
+}
+.container .block-nav .navi-bar .btn-cir-item {
+  height: 45px;
+  border-radius: 45px;
+  text-align: center;
+  font-size: 20px;
+  padding: 6px 0;
+  margin-top: 25px;
+}
+.container .block-nav .navi-bar .btn-register {
+  background: #E1B011;
+  color: white;
+}
+.container .block-nav .navi-bar .btn-login {
+  border: 1px solid #707070;
+}
+.container .block-header {
+  height: 1080px;
+  position: relative;
+  z-index: 150;
+}
+.container .block-header .title-position {
+  padding: 0px;
+  color: white;
+  font-weight: lighter;
+  height: 100%;
+  background: #E1B011;
+}
+.container .block-header .title-video {
+  padding: 0px;
+  height: 100%;
+}
+.container .block-header .title-left {
+  overflow: hidden;
+}
+.container .block-header .title-left .title-num {
+  font-size: 400px;
+  transform: rotate(90deg);
+  margin-top: 145px;
+  position: relative;
+  left: -195px;
+}
+.container .block-header .title-left .title-header {
+  margin-top: 150px;
+  font-size: 100px;
+  margin-left: 0px;
+}
+.container .block-header .title-right {
+  overflow: hidden;
+}
+.container .block-header .title-right .page-title {
+  width: 1200px;
+  font-size: 200px;
+  transform: rotate(270deg);
+  margin-top: 480px;
+  position: relative;
+  right: 150px;
+}
+.container .block-people-content .people {
+  text-align: left;
+  overflow: hidden;
+  display: flex;
+  margin: 145px 0;
+  width: 100%;
+}
+.container .block-people-content .people .people-content {
+  margin: 0 156px;
+  height: 460px;
+  width: 1040px;
+}
+.container .block-people-content .people .people-content .people-title {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+.container .block-people-content .people .people-content .people-title .people-name {
+  margin: 0 42px;
+  font-size: 50px;
+  padding-top: 110px;
+}
+.container .block-people-content .people .people-content .people-description {
+  font-size: 30px;
+}
+.container .block-people-content .people .circle {
+  height: 242px;
+  width: 242px;
+  border-radius: 100%;
+  position: absolute;
+}
+.container .block-people-content .people-single {
+  justify-content: flex-end;
+}
+.container .block-people-content .people-single .circle {
+  background: #E1B011;
+  left: -121px;
+}
+.container .block-people-content .people-single .people-title {
+  flex-direction: row-reverse;
+}
+.container .block-people-content .people-double {
+  justify-content: flex-start;
+}
+.container .block-people-content .people-double .hollow-circle-mask {
+  position: absolute;
+  overflow: hidden;
+  right: 0px;
+  width: 121px;
+  height: 242px;
+}
+.container .block-people-content .people-double .hollow-circle {
+  right: -121px;
+  border: 50px solid #E1B011;
+}
+/*# sourceMappingURL=mianpage.css.map */
