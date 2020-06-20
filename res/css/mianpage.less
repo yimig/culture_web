@@ -34,7 +34,8 @@
     margin: 0;
     height: 980px;
     width: 100%;
-    background-image: url("../img/header.png");
+    background: url("../img/header.png") no-repeat right;
+    background-size: cover;
 
     .main-title{
       color: @font_color;
@@ -57,14 +58,14 @@
         font-size: 30px;
         color: white;
 
-      &:after{
-        content: "";
-        width: 209px;
-        height: 5px;
-        background-color: white;
-        position: relative;
-        left: -40px;
-       }
+      //&:after{
+      //  content: "";
+      //  width: 209px;
+      //  height: 5px;
+      //  background-color: white;
+      //  position: relative;
+      //  left: -40px;
+      // }
       }
   }
 
@@ -135,6 +136,11 @@
     .title-video{
       padding: 0px;
       height: 100%;
+      video{
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+      }
     }
 
     .title-left{
