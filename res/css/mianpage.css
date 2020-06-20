@@ -8,6 +8,9 @@
   -ms-user-select: none;
   user-select: none;
 }
+.active {
+  border-bottom: 5px solid #E1B011;
+}
 .container {
   margin-left: 0px;
   padding-left: 0px;
@@ -59,10 +62,17 @@
   height: 100px;
   margin: auto;
   text-align: center;
-  padding: 30px 0;
+  padding: 25px 0;
   font-size: 25px;
 }
+.container .block-nav .navi-bar .navi-item a {
+  color: #707070;
+}
+.container .block-nav .navi-bar .navi-item a:focus {
+  background: none;
+}
 .container .block-nav .navi-bar .navi-item:hover {
+  background: #EEEEEE;
   border-bottom: 5px solid #E1B011;
 }
 .container .block-nav .navi-bar .search-bar {
@@ -73,8 +83,9 @@
 }
 .container .block-nav .navi-bar .search-bar .search-bar-item {
   font-size: 20px;
+  padding: 0;
   border: none;
-  height: 43px;
+  height: 100%;
   border-radius: 25px;
   width: 95%;
 }

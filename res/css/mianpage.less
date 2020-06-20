@@ -14,6 +14,10 @@
   user-select:none;
 }
 
+.active{
+  border-bottom: 5px solid @main_color;
+}
+
 .container{
   margin-left: 0px;
   margin-left: 0px;
@@ -81,9 +85,16 @@
         height: 100px;
         margin: auto;
         text-align: center;
-        padding: 30px 0;
+        padding: 25px 0;
         font-size: 25px;
+        a{
+          color: @font_color;
+          &:focus{
+            background: none;
+          }
+        }
         &:hover{
+          background: #EEEEEE;
           border-bottom: 5px solid @main_color;
         }
       }
@@ -94,8 +105,9 @@
         margin-top: 25px;
         .search-bar-item{
           font-size: 20px;
+          padding: 0;
           border: none;
-          height: 43px;
+          height: 100%;
           border-radius: 25px;
           width: 95%;
         }
