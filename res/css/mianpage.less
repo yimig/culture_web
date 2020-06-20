@@ -189,15 +189,11 @@
 
   .block-people-content{
     .people{
-      text-align: left;
-      overflow: hidden;
-      display: flex;
-      margin: 145px 0;
       width: 100%;
+      overflow: hidden;
+      margin: 145px 0;
       .people-content{
-        margin: 0 156px;
         height: 460px;
-        width: 1040px;
         .people-title{
           display: flex;
           justify-content: flex-start;
@@ -212,19 +208,25 @@
           font-size: 30px;
         }
       }
-      .circle{
-        height: 242px;
-        width: 242px;
-        border-radius: 100%;
-        position: absolute;
+      .circle-mask{
+        height: 100%;
+        .circle{
+          height: 242px;
+          width: 242px;
+          border-radius: 100%;
+          position: absolute;
+        }
       }
     }
 
     .people-single{
       justify-content: flex-end;
-      .circle{
-        background: @main_color;
-        left: -121px;
+      .circle-mask{
+        left: 0px;
+        .circle{
+          background: @main_color;
+          left: -121px;
+        }
       }
       .people-title{
         flex-direction: row-reverse;
@@ -233,16 +235,24 @@
 
     .people-double{
       justify-content: flex-start;
-      .hollow-circle-mask{
+      flex-direction: column-reverse;
+      .people-content{
+        margin-left: 0px;
+      }
+      .circle-mask{
         position: absolute;
         overflow: hidden;
         right: 0px;
         width: 121px;
         height: 242px;
+        .circle{
+          right: -121px;
+          border: 50px solid @main_color;
+        }
       }
-      .hollow-circle{
-        right: -121px;
-        border: 50px solid @main_color;
+
+      .people-content{
+        width: 60%;
       }
     }
   }

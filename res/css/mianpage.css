@@ -154,16 +154,12 @@
   right: -530px;
 }
 .container .block-people-content .people {
-  text-align: left;
-  overflow: hidden;
-  display: flex;
-  margin: 145px 0;
   width: 100%;
+  overflow: hidden;
+  margin: 145px 0;
 }
 .container .block-people-content .people .people-content {
-  margin: 0 156px;
   height: 460px;
-  width: 1040px;
 }
 .container .block-people-content .people .people-content .people-title {
   display: flex;
@@ -178,7 +174,10 @@
 .container .block-people-content .people .people-content .people-description {
   font-size: 30px;
 }
-.container .block-people-content .people .circle {
+.container .block-people-content .people .circle-mask {
+  height: 100%;
+}
+.container .block-people-content .people .circle-mask .circle {
   height: 242px;
   width: 242px;
   border-radius: 100%;
@@ -187,7 +186,10 @@
 .container .block-people-content .people-single {
   justify-content: flex-end;
 }
-.container .block-people-content .people-single .circle {
+.container .block-people-content .people-single .circle-mask {
+  left: 0px;
+}
+.container .block-people-content .people-single .circle-mask .circle {
   background: #E1B011;
   left: -121px;
 }
@@ -196,17 +198,24 @@
 }
 .container .block-people-content .people-double {
   justify-content: flex-start;
+  flex-direction: column-reverse;
 }
-.container .block-people-content .people-double .hollow-circle-mask {
+.container .block-people-content .people-double .people-content {
+  margin-left: 0px;
+}
+.container .block-people-content .people-double .circle-mask {
   position: absolute;
   overflow: hidden;
   right: 0px;
   width: 121px;
   height: 242px;
 }
-.container .block-people-content .people-double .hollow-circle {
+.container .block-people-content .people-double .circle-mask .circle {
   right: -121px;
   border: 50px solid #E1B011;
+}
+.container .block-people-content .people-double .people-content {
+  width: 60%;
 }
 .container .block-masterpiece-content {
   height: 1080px;
