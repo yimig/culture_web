@@ -155,14 +155,16 @@
 
     .title-right{
       overflow: hidden;
+      position: relative;
+      right: 0px;
       .page-title{
+
         width: 1200px;
         font-size: 200px;
         transform: rotate(270deg);
         margin-top: 480px;
-        position: relative;
-        right: 150px;
-
+        position: absolute;
+        right: -530px;
       }
     }
   }
@@ -223,6 +225,90 @@
       .hollow-circle{
         right: -121px;
         border: 50px solid @main_color;
+      }
+    }
+  }
+
+  .block-masterpiece-content{
+    height: 1080px;
+    .masterpiece-list-area{
+      .img-circle{
+        height: 280px;
+        width: 280px;
+        background: url("../img/bg-将进酒.jpg") no-repeat right;
+        background-size: cover;
+        position: absolute;
+        left: 205px;
+        top:34px;
+      }
+      .masterpiece-list{
+        margin-top: 180px;
+        height: 900px;
+        width: 300px;
+        background: @main_color;
+        color: white;
+        display: flex;
+        justify-content: flex-start;
+        .select-bar{
+          margin-top: 44px;
+          margin-left: 10px;
+          .select-circle{
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            border: 5px solid white;
+            background: @main_color;
+          }
+          .select-line{
+            height: 860px;
+            width: 0;
+            border: 5px solid white;
+            margin-left: 24px;
+          }
+        }
+        ul{
+          margin-top: 134px;
+          list-style: none;
+          .selected-masterpiece{
+            .masterpiece-title{
+              font-size: 50px;
+            }
+            .masterpiece-author{
+              font-size: 30px;
+            }
+          }
+          .unselected-masterpiece{
+            margin-top: 20px;
+            font-weight: lighter;
+            font-size: 40px;
+          }
+        }
+      }
+    }
+
+    .masterpiece-content-area{
+      margin-top: 300px;
+      .masterpiece-content{
+        font-size: 40px;
+        font-weight: lighter;
+      }
+    }
+
+    .masterpiece-header-area{
+      overflow: hidden;
+      position: relative;
+      right: 0px;
+      height: 1080px;
+      .masterpiece-header{
+        font-size: 200px;
+        font-weight: lighter;
+        color: @main_color;
+        width: 1000px;
+        transform: rotate(270deg);
+        position: absolute;
+        top:100px;
+        right: -430px;
       }
     }
   }

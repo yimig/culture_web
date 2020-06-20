@@ -133,14 +133,16 @@
 }
 .container .block-header .title-right {
   overflow: hidden;
+  position: relative;
+  right: 0px;
 }
 .container .block-header .title-right .page-title {
   width: 1200px;
   font-size: 200px;
   transform: rotate(270deg);
   margin-top: 480px;
-  position: relative;
-  right: 150px;
+  position: absolute;
+  right: -530px;
 }
 .container .block-people-content .people {
   text-align: left;
@@ -196,5 +198,82 @@
 .container .block-people-content .people-double .hollow-circle {
   right: -121px;
   border: 50px solid #E1B011;
+}
+.container .block-masterpiece-content {
+  height: 1080px;
+}
+.container .block-masterpiece-content .masterpiece-list-area .img-circle {
+  height: 280px;
+  width: 280px;
+  background: url("../img/bg-将进酒.jpg") no-repeat right;
+  background-size: cover;
+  position: absolute;
+  left: 205px;
+  top: 34px;
+}
+.container .block-masterpiece-content .masterpiece-list-area .masterpiece-list {
+  margin-top: 180px;
+  height: 900px;
+  width: 300px;
+  background: #E1B011;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+}
+.container .block-masterpiece-content .masterpiece-list-area .masterpiece-list .select-bar {
+  margin-top: 44px;
+  margin-left: 10px;
+}
+.container .block-masterpiece-content .masterpiece-list-area .masterpiece-list .select-bar .select-circle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 5px solid white;
+  background: #E1B011;
+}
+.container .block-masterpiece-content .masterpiece-list-area .masterpiece-list .select-bar .select-line {
+  height: 860px;
+  width: 0;
+  border: 5px solid white;
+  margin-left: 24px;
+}
+.container .block-masterpiece-content .masterpiece-list-area .masterpiece-list ul {
+  margin-top: 134px;
+  list-style: none;
+}
+.container .block-masterpiece-content .masterpiece-list-area .masterpiece-list ul .selected-masterpiece .masterpiece-title {
+  font-size: 50px;
+}
+.container .block-masterpiece-content .masterpiece-list-area .masterpiece-list ul .selected-masterpiece .masterpiece-author {
+  font-size: 30px;
+}
+.container .block-masterpiece-content .masterpiece-list-area .masterpiece-list ul .unselected-masterpiece {
+  margin-top: 20px;
+  font-weight: lighter;
+  font-size: 40px;
+}
+.container .block-masterpiece-content .masterpiece-content-area {
+  margin-top: 300px;
+}
+.container .block-masterpiece-content .masterpiece-content-area .masterpiece-content {
+  font-size: 40px;
+  font-weight: lighter;
+}
+.container .block-masterpiece-content .masterpiece-header-area {
+  overflow: hidden;
+  position: relative;
+  right: 0px;
+  height: 1080px;
+}
+.container .block-masterpiece-content .masterpiece-header-area .masterpiece-header {
+  font-size: 200px;
+  font-weight: lighter;
+  color: #E1B011;
+  width: 1000px;
+  transform: rotate(270deg);
+  position: absolute;
+  top: 100px;
+  right: -430px;
 }
 /*# sourceMappingURL=mianpage.css.map */
