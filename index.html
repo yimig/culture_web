@@ -77,56 +77,30 @@
     </div>
     <div class="row block-masterpiece-content"  id="masterpiece">
         <div class="masterpiece-list-area col-sm-3 col-sm-offset-1">
-            <div class="img-circle"></div>
+            <div class="img-circle" :style="'background: url(\''+masterpiece[current_selected].img+'\') no-repeat right/cover;'"></div>
             <div class="masterpiece-list">
                 <div class="select-bar">
                     <div class="select-circle"></div>
                     <div class="select-line"></div>
                 </div>
                 <ul>
-                    <li>
-                        <div class="selected-masterpiece">
-                            <div class="masterpiece-title">将进酒</div>
-                            <div class="masterpiece-author">李白</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="unselected-masterpiece">
-                            <div class="masterpiece-title">望岳</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="unselected-masterpiece">
-                            <div class="masterpiece-title">望岳</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="unselected-masterpiece">
-                            <div class="masterpiece-title">望岳</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="unselected-masterpiece">
-                            <div class="masterpiece-title">望岳</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="unselected-masterpiece">
-                            <div class="masterpiece-title">望岳</div>
+                    <li v-for="(mp,index) in masterpiece" :id="index" @click="changeCurrentMasterpiece($event)">
+                        <div :class="current_selected == index?'selected-masterpiece':'unselected-masterpiece'">
+                            <div class="masterpiece-title">{{ mp.title }}</div>
+                            <div class="masterpiece-author">{{ mp.author }}</div>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="masterpiece-content-area col-sm-6">
-            <div class="masterpiece-content">
-                君不见黄河之水天上来，奔流到海不复回。 君不见高堂明镜悲白发，朝如青丝暮成雪。 人生得意须尽欢，莫使金樽空对月。 天生我材必有用，千金散尽还复来。 烹羊宰牛且为乐，会须一饮三百杯。 岑夫子，丹丘生，将进酒，杯莫停。 与君歌一曲，请君为我倾耳听。 钟鼓馔玉不足贵，但愿长醉不复醒。 古来圣贤皆寂寞，惟有饮者留其名。 陈王昔时宴平乐，斗酒十千恣欢谑。 主人何为言少钱，径须沽取对君酌。 五花马、千金裘，呼儿将出换美酒，与尔同销万古愁。
+            <div class="masterpiece-content" v-html="masterpiece[current_selected].content">
             </div>
             <div class="btn-more"></div>
         </div>
         <div class="masterpiece-header-area col-sm-2">
             <div class="masterpiece-header">
-                将进酒
+                {{ masterpiece[current_selected].title }}
             </div>
         </div>
     </div>

@@ -263,8 +263,8 @@
       .img-circle{
         height: 280px;
         width: 280px;
-        background: url("../img/bg-将进酒.jpg") no-repeat right;
-        background-size: cover;
+        //background: url("../img/bg-将进酒.jpg") no-repeat right;
+        //background-size: cover;
         position: absolute;
         left: 205px;
         top:34px;
@@ -298,7 +298,16 @@
         ul{
           margin-top: 134px;
           list-style: none;
+          width: 100%;
+          li{
+            &:hover{
+              background: white;
+              color: @main_color;
+            }
+          }
           .selected-masterpiece{
+            background: white;
+            color: @main_color;
             .masterpiece-title{
               font-size: 50px;
             }
@@ -310,6 +319,9 @@
             margin-top: 20px;
             font-weight: lighter;
             font-size: 40px;
+            .masterpiece-author{
+              display: none;
+            }
           }
         }
       }

@@ -223,8 +223,6 @@
 .container .block-masterpiece-content .masterpiece-list-area .img-circle {
   height: 280px;
   width: 280px;
-  background: url("../img/bg-将进酒.jpg") no-repeat right;
-  background-size: cover;
   position: absolute;
   left: 205px;
   top: 34px;
@@ -259,6 +257,15 @@
 .container .block-masterpiece-content .masterpiece-list-area .masterpiece-list ul {
   margin-top: 134px;
   list-style: none;
+  width: 100%;
+}
+.container .block-masterpiece-content .masterpiece-list-area .masterpiece-list ul li:hover {
+  background: white;
+  color: #E1B011;
+}
+.container .block-masterpiece-content .masterpiece-list-area .masterpiece-list ul .selected-masterpiece {
+  background: white;
+  color: #E1B011;
 }
 .container .block-masterpiece-content .masterpiece-list-area .masterpiece-list ul .selected-masterpiece .masterpiece-title {
   font-size: 50px;
@@ -270,6 +277,9 @@
   margin-top: 20px;
   font-weight: lighter;
   font-size: 40px;
+}
+.container .block-masterpiece-content .masterpiece-list-area .masterpiece-list ul .unselected-masterpiece .masterpiece-author {
+  display: none;
 }
 .container .block-masterpiece-content .masterpiece-content-area {
   margin-top: 300px;
