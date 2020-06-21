@@ -16,7 +16,10 @@
             <div class="row main-title">中国传统<span class="colored">古诗词</span>文化</div>
             <div class="row sub-title">诗文化深刻、生动地体现着中国文化的基本精神。诗文学是语言的艺术， 是民族的精神与心灵史，也是文化的主要形态之一。中国文学历经3000多年不曾中断， 是世界上历史最悠久的文学之一，是中国文化中最重要、最璀璨的部分。</div>
             <div class="row ctr-more">
-                <div class="btn-more">了解更多  ></div>
+                <div class="btn-more">
+                    <div class="more-text">了解更多</div>
+                    <div class="more-arrow"> > </div>
+                </div>
             </div>
         </div>
     </div>
@@ -94,9 +97,13 @@
             </div>
         </div>
         <div class="masterpiece-content-area col-sm-6">
-            <div class="masterpiece-content" v-html="masterpiece[current_selected].content">
+            <div class="masterpiece-content" v-html="masterpiece[current_selected].content"></div>
+            <div class="row ctr-more">
+                <div class="btn-more">
+                    <a :href="masterpiece[current_selected].url"><div class="more-text">了解更多</div></a>
+                    <div class="more-arrow"> > </div>
+                </div>
             </div>
-            <div class="btn-more"></div>
         </div>
         <div class="masterpiece-header-area col-sm-2">
             <div class="masterpiece-header">

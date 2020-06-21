@@ -2,6 +2,25 @@
 @font_color:#707070;
 @header-height:1080px;
 
+.btn-temp(@top,@left,@deg){
+  .ctr-more{
+    margin-top: @top;
+    margin-left: @left;
+    font-size: 30px;
+    color: @main_color;
+    .btn-more{
+      display: flex;
+      .more-arrow{
+        margin-left: 20px;
+        transform: rotate(@deg);
+      }
+      a{
+        color: @main_color;
+      }
+    }
+  }
+}
+
 *{
   font-family: "Segoe UI", "Microsoft YaHei UI", sans-serif;
   // 禁止文字被鼠标选中
@@ -56,21 +75,7 @@
       font-size: 20px;
     }
 
-    .ctr-more{
-        margin-top: 148px;
-        margin-left: 207px;
-        font-size: 30px;
-        color: white;
-
-      //&:after{
-      //  content: "";
-      //  width: 209px;
-      //  height: 5px;
-      //  background-color: white;
-      //  position: relative;
-      //  left: -40px;
-      // }
-      }
+    .btn-temp(148px,207px,90deg)
   }
 
   .block-nav{
@@ -333,6 +338,7 @@
         font-size: 40px;
         font-weight: lighter;
       }
+      .btn-temp(20px,0px,0deg)
     }
 
     .masterpiece-header-area{

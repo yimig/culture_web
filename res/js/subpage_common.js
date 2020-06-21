@@ -4,5 +4,6 @@ var app = new Vue({
         title:'Default Title',
         content:'Default Content',
         description:'Default Description',
+        bg_img:'',
     }
 })

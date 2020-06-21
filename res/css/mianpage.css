@@ -48,7 +48,17 @@
   margin-top: 148px;
   margin-left: 207px;
   font-size: 30px;
-  color: white;
+  color: #E1B011;
+}
+.container .block-home .ctr-more .btn-more {
+  display: flex;
+}
+.container .block-home .ctr-more .btn-more .more-arrow {
+  margin-left: 20px;
+  transform: rotate(90deg);
+}
+.container .block-home .ctr-more .btn-more a {
+  color: #E1B011;
 }
 .container .block-nav {
   background: white;
@@ -287,6 +297,22 @@
 .container .block-masterpiece-content .masterpiece-content-area .masterpiece-content {
   font-size: 40px;
   font-weight: lighter;
+}
+.container .block-masterpiece-content .masterpiece-content-area .ctr-more {
+  margin-top: 20px;
+  margin-left: 0px;
+  font-size: 30px;
+  color: #E1B011;
+}
+.container .block-masterpiece-content .masterpiece-content-area .ctr-more .btn-more {
+  display: flex;
+}
+.container .block-masterpiece-content .masterpiece-content-area .ctr-more .btn-more .more-arrow {
+  margin-left: 20px;
+  transform: rotate(0deg);
+}
+.container .block-masterpiece-content .masterpiece-content-area .ctr-more .btn-more a {
+  color: #E1B011;
 }
 .container .block-masterpiece-content .masterpiece-header-area {
   overflow: hidden;
