@@ -1,0 +1,68 @@
+@main_color: #E1B011;
+@font_color:#707070;
+@header-height:1080px;
+
+*{
+  font-family: "Segoe UI", "Microsoft YaHei UI", sans-serif;
+  // 禁止文字被鼠标选中
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+.container{
+  background: url('../img/bg-将进酒.jpg') no-repeat right/cover;
+  margin-left: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 100%;
+  width: 100%;
+  .left-block{
+    position: relative;
+    height: 100%;
+    .title{
+      margin-top: 100px;
+      font-size: 100px;
+      font-weight: lighter;
+      color: white;
+      display: flex;
+      background: @main_color;
+      a{
+        color: white;
+        &:hover{
+          background: white;
+          color: @main_color;
+        }
+      }
+      .title-text{
+        margin-left: 122px;
+      }
+    }
+
+    .content-area{
+      position: relative;
+      margin: 25px 0 25px 25px;
+      background: white;
+      font-size: 30px;
+      .content{
+        margin: 20px;
+      }
+    }
+  }
+
+  .right-block{
+    .description-area{
+      margin: 100px 50px 0px 100px;
+      background: rgba(255,255,255,0.8);
+      .description{
+        font-size: 30px;
+        margin: 50px;
+      }
+    }
+  }
+}
