@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #E1B011;
+    font-family: "Arial Narrow", sans-serif;
+}
+
+.btn_login{
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -75px;
+    margin-top: 75px;
+    line-height: 50px;
+    text-align: center;
+    color: #E1B011;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 25px;
+}
+.btn_register{
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    margin-left: -75px;
+    margin-top: 75px;
+    line-height: 50px;
+    text-align: center;
+    color: #E1B011;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.btn_register:hover{
+    animation: a 1s;
+}
+.btn_login:hover{
+    animation: a 1s;
+}
+.user{
+    top:20%
+}
+.phone_num{
+    top: 50%;
+}
+
+.mail{
+    top: 40%;
+}
+.psd{
+    top: 30%;
+}
+.V_code{
+    top: 60%;
+}
+
+input{
+    position: absolute;
+    border: none;
+    left: 50%;
+    border-radius: 25px;
+    padding-left: 20px;
+    width: 380px;
+    height: 50px;
+    margin-left: -200px;
+    background-color: white;
+    color: #707070;
+    font-size: larger;
+}
+
+input:hover{
+    animation: a 1s;
+}
+
+p{
+    position: absolute;
+    left: 50%;
+    width: 200px;
+    height: 50px;
+    margin-left: -100px;
+    top: 10%;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 50px;
+}
+
+p:hover{
+    animation: b 1s;
+}
+
+@keyframes a {
+    0%,100%{
+        transform: scale(1,1);
+    }
+    75%,25%{
+        transform: scale(0.8,1.2);
+    }
+    50%{
+        transform: scale(1.2,0.8);
+    }
+}
+
+@keyframes b {
+    0%,100%{
+        font-size: 22px;
+    }
+    25%,75%{
+        font-size: 30px;
+    }
+    50%{
+        font-size: 22px;
+    }
+}

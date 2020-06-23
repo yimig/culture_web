@@ -1,0 +1,1 @@
+import './res/css/loginandregister.css'
