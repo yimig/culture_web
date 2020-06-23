@@ -114,5 +114,11 @@ module.exports = {
             template: "./src/login.html"
         }),
 
-    ]
+    ],
+    devServer: {
+        contentBase:path.resolve(__dirname,'build'),
+        compress:true,
+        port:3000,
+        open:true
+    }
 }

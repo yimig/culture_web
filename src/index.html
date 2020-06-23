@@ -9,9 +9,9 @@
 <body>
 <div class="container" id="main-container">
     <div class="row block-home page-section">
-        <div class="col-sm-7">
+        <div class="col-md-7 col-xm-12">
             <div class="row main-title">中国传统<span class="colored">古诗词</span>文化</div>
-            <div class="row sub-title">诗文化深刻、生动地体现着中国文化的基本精神。诗文学是语言的艺术， 是民族的精神与心灵史，也是文化的主要形态之一。中国文学历经3000多年不曾中断， 是世界上历史最悠久的文学之一，是中国文化中最重要、最璀璨的部分。</div>
+            <div class="row sub-title visible-md visible-lg">诗文化深刻、生动地体现着中国文化的基本精神。诗文学是语言的艺术， 是民族的精神与心灵史，也是文化的主要形态之一。中国文学历经3000多年不曾中断， 是世界上历史最悠久的文学之一，是中国文化中最重要、最璀璨的部分。</div>
             <div class="row ctr-more">
                 <div class="btn-more">
                     <div class="more-text">了解更多</div>
@@ -22,39 +22,40 @@
     </div>
     <nav class="row block-nav navbar-default navbar-static" id="navbar" role="navigation">
         <ul class="navi-bar nav">
-            <li class="navi-item to-homepage col-sm-2" ><a href="#" role="tab" data-toggle="tab">首页</a></li>
-            <li class="navi-item to_people col-sm-2" :class="active==1?'active':''"><a href="#people" role="tab" data-toggle="tab">代表<span class="colored">人物</span></a></li>
-            <li class="navi-item to_masterpiece col-sm-2" :class="active==2?'active':''"><a href="#masterpiece" role="tab" data-toggle="tab">经典<span class="colored">佳作</span></a></li>
-            <div class="search-bar col-sm-3">
+            <li class="navi-item to-homepage col-xs-2" ><a href="#" role="tab" data-toggle="tab">首页</a></li>
+            <li class="navi-item to_people col-xs-2" :class="active==1?'active':''"><a href="#people" role="tab" data-toggle="tab">代表<span class="colored">人物</span></a></li>
+            <li class="navi-item to_masterpiece col-xs-2" :class="active==2?'active':''"><a href="#masterpiece" role="tab" data-toggle="tab">经典<span class="colored">佳作</span></a></li>
+            <div class="search-bar col-md-3 visible-md visible-lg">
                 <input type="search" class="search-bar-item">
                 <span class="glyphicon glyphicon-search search-icon"></span>
             </div>
-            <div class="btn-cir col-sm-1 col-sm-offset-1">
+            <div class="btn-cir col-md-1 col-xs-2 col-md-offset-1 col-xs-offset-2">
                 <a href="register.html"><div class="btn-cir-item btn-register">注册</div></a>
             </div>
-            <div class="btn-cir col-sm-1">
+            <div class="btn-cir col-md-1 col-xs-2">
                 <a href="login.html"><div class="btn-cir-item btn-login">登录</div></a>
             </div>
         </ul>
     </nav>
     <div class="row block-people-header block-header page-section">
-        <div class="title-position title-left col-sm-4">
+        <div class="visible-xs visible-sm nano-title">代表人物</div>
+        <div class="title-position title-left col-md-4 visible-lg visible-md">
             <div class="title-num">01</div>
             <div class="title-header">代表人物</div>
         </div>
-        <div class="title-mid col-sm-4 title-video">
+        <div class="title-mid col-xm-12 col-md-4 title-video">
             <video class="people-video" src="res/video/vheader1.mp4" muted autoplay loop></video>
         </div>
-        <div class="title-position title-right col-sm-4">
+        <div class="title-position title-right col-md-4 visible-lg visible-md">
             <div class="page-title">统古诗词文化</div>
         </div>
     </div>
     <div class="row block-people-content"  id="people">
         <div v-for="(item,index) in peopleData" class="row people" :class="index%2?'people-double':'people-single'">
-            <div class="col-sm-1 circle-mask">
+            <div class="col-md-1 circle-mask visible-md visible-lg">
                 <div class="circle"></div>
             </div>
-            <div class="col-sm-7 people-content col-sm-offset-4">
+            <div class="col-xs-12 col-md-7 people-content col-md-offset-4">
                 <div class="people-title">
                     <img :src="item.img" :alt="item.name">
                     <div class="people-name" v-html="item.html_name"></div>
@@ -64,22 +65,23 @@
         </div>
     </div>
     <div class="row block-masterpiece-header block-header page-section">
-        <div class="title-position title-left col-sm-4">
+        <div class="visible-xs visible-sm nano-title">经典佳作</div>
+        <div class="title-position title-left col-md-4 visible-md visible-lg">
             <div class="title-num">02</div>
             <div class="title-header">经典佳作</div>
         </div>
-        <div class="title-mid col-sm-4 title-video">
+        <div class="title-mid col-md-4 col-xs-12 title-video">
             <video class="masterpiece-video" src="res/video/vheader2.mp4" muted autoplay loop></video>
         </div>
-        <div class="title-position title-right col-sm-4">
+        <div class="title-position title-right col-md-4 visible-md visible-lg">
             <div class="page-title">统古诗词文化</div>
         </div>
     </div>
     <div class="row block-masterpiece-content"  id="masterpiece">
-        <div class="masterpiece-list-area col-sm-3 col-sm-offset-1">
-            <div class="img-circle" :style="'background: url(\''+masterpiece[current_selected].img+'\') no-repeat right/cover;'"></div>
+        <div class="masterpiece-list-area col-md-3 col-md-offset-1 col-xs-5">
+            <div class="img-circle visible-md visible-lg" :style="'background: url(\''+masterpiece[current_selected].img+'\') no-repeat right/cover;'"></div>
             <div class="masterpiece-list">
-                <div class="select-bar">
+                <div class="select-bar visible-md visible-lg">
                     <div class="select-circle"></div>
                     <div class="select-line"></div>
                 </div>
@@ -93,7 +95,7 @@
                 </ul>
             </div>
         </div>
-        <div class="masterpiece-content-area col-sm-6">
+        <div class="masterpiece-content-area col-md-6 col-xs-7">
             <div class="masterpiece-content" v-html="masterpiece[current_selected].content"></div>
             <div class="row ctr-more">
                 <div class="btn-more">
@@ -102,7 +104,7 @@
                 </div>
             </div>
         </div>
-        <div class="masterpiece-header-area col-sm-2">
+        <div class="masterpiece-header-area col-md-2 visible-md visible-lg">
             <div class="masterpiece-header">
                 {{ masterpiece[current_selected].title }}
             </div>
