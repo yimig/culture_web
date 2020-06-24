@@ -1,6 +1,7 @@
 let path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
+//开启热更新：webpack-dev-server
 module.exports = {
     entry: {
         home:"./src/index.js",
@@ -76,32 +77,32 @@ module.exports = {
         new HtmlWebpackPlugin({
             chunks: ['sub_1'],
             filename: 'poetry_page_1.html',
-            template: "./src/poetry_page_1.html"
+            template: "./src/poetry_page.html"
         }),
         new HtmlWebpackPlugin({
             chunks: ['sub_2'],
             filename: 'poetry_page_2.html',
-            template: "./src/poetry_page_2.html"
+            template: "./src/poetry_page.html"
         }),
         new HtmlWebpackPlugin({
             chunks: ['sub_3'],
             filename: 'poetry_page_3.html',
-            template: "./src/poetry_page_3.html"
+            template: "./src/poetry_page.html"
         }),
         new HtmlWebpackPlugin({
             chunks: ['sub_4'],
             filename: 'poetry_page_4.html',
-            template: "./src/poetry_page_4.html"
+            template: "./src/poetry_page.html"
         }),
         new HtmlWebpackPlugin({
             chunks: ['sub_5'],
             filename: 'poetry_page_5.html',
-            template: "./src/poetry_page_5.html"
+            template: "./src/poetry_page.html"
         }),
         new HtmlWebpackPlugin({
             chunks: ['sub_6'],
             filename: 'poetry_page_6.html',
-            template: "./src/poetry_page_6.html"
+            template: "./src/poetry_page.html"
         }),
         new HtmlWebpackPlugin({
             chunks: ['relogin'],
@@ -118,6 +119,7 @@ module.exports = {
     devServer: {
         contentBase:path.resolve(__dirname,'build'),
         compress:true,
+        host:'0.0.0.0',
         port:3000,
         open:true
     }

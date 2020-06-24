@@ -170,12 +170,12 @@ a:hover {
 .container .block-header .nano-title {
   position: absolute;
   z-index: 150;
-  font-size: 200px;
+  font-size: 100px;
   transform: rotate(90deg);
   width: 1000px;
   color: #E1B011;
-  left: -400px;
-  top: 500px;
+  left: -450px;
+  top: 600px;
 }
 .container .block-people-content .people {
   width: 100%;
@@ -183,7 +183,7 @@ a:hover {
   margin: 145px 0;
 }
 .container .block-people-content .people .people-content {
-  height: 460px;
+  height: auto;
 }
 .container .block-people-content .people .people-content .people-title {
   display: flex;
@@ -345,11 +345,67 @@ a:hover {
   right: -430px;
 }
 @media (max-width: 992px) {
+  .container .block-home {
+    height: 500px;
+  }
+  .container .block-home .main-title {
+    margin-left: 0px;
+    font-size: 30px;
+  }
+  .container .block-home .ctr-more {
+    font-size: 20px;
+  }
+  .container .block-nav {
+    height: 50px;
+  }
+  .container .block-nav .navi-bar .navi-item {
+    padding: 8px 0;
+    height: 50px;
+    font-size: 10px;
+  }
+  .container .block-people-content .people {
+    margin: 0 0;
+  }
+  .container .block-people-content .people .people-content {
+    height: auto;
+  }
+  .container .block-people-content .people .people-content .people-title {
+    display: inline-block;
+  }
+  .container .block-people-content .people .people-content .people-title .people-name {
+    display: inline-block;
+    font-size: 40px;
+  }
+  .container .block-people-content .people .people-content .people-title img {
+    height: 100px;
+    width: 100px;
+    vertical-align: bottom;
+    display: inline-block;
+  }
+  .container .block-people-content .people .people-content .people-description {
+    font-size: 20px;
+  }
   .container .block-people-content .people-double .people-content {
     width: 100%;
   }
   .container .block-masterpiece-content .masterpiece-list-area .masterpiece-list {
+    margin-top: 50px;
     width: 100%;
+  }
+  .container .block-masterpiece-content .masterpiece-list-area .masterpiece-list ul .selected-masterpiece .masterpiece-title {
+    font-size: 20px;
+  }
+  .container .block-masterpiece-content .masterpiece-list-area .masterpiece-list ul .selected-masterpiece .masterpiece-author {
+    font-size: 15px;
+  }
+  .container .block-masterpiece-content .masterpiece-list-area .masterpiece-list ul .unselected-masterpiece {
+    font-size: 18px;
+  }
+  .container .block-masterpiece-content .masterpiece-content-area {
+    margin-top: 50px;
+  }
+  .container .block-masterpiece-content .masterpiece-content-area .masterpiece-content {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=mianpage.css.map */
