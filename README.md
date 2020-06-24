@@ -1,11 +1,11 @@
-# 中国传统古诗词文化网页
+# HTML5课设：中国传统古诗词文化网页
 
 要初始化网页，请先安装npm，然后依次执行以下命令：
 ```batch
 npm init -y
 webpack
 ```
-然后再build路径下执行index.html
+然后在build路径下打开index.html
  
  ## 1. 交付
  
@@ -14,8 +14,6 @@ webpack
  原型预览：[点击跳转](https://xd.adobe.com/view/480a9302-f8fd-4bec-aeca-d3099516ddc5-1d59/screen/3f7e5b24-d03d-4f04-80b9-b3ba664ae120/-1)
  
  成品预览：[点击跳转](https://quizzical-gates-219148.netlify.app) (由Netlify托管)
- 
- Github页面：[点击跳转](https://github.com/yimig/culture_web.git)
  
  ### 1.2 交付页面
  
