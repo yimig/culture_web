@@ -17,8 +17,8 @@ module.exports = {
         filename:"[name]-bundle.js",
         path:path.resolve(__dirname,'build')
     },
-    mode:'development',
-    //mode:'production',
+    // mode:'development',
+    mode:'production',
     module:{
         rules:[
             {
@@ -119,7 +119,7 @@ module.exports = {
     devServer: {
         contentBase:path.resolve(__dirname,'build'),
         compress:true,
-        host:'0.0.0.0',
+        //host:'0.0.0.0',
         port:3000,
         open:true
     }
