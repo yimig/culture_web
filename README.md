@@ -2,7 +2,7 @@
 
 要初始化网页，请先安装npm，然后依次执行以下命令：
 ```batch
-npm init -y
+npm install --dependencies
 webpack
 ```
 然后在build路径下打开index.html
